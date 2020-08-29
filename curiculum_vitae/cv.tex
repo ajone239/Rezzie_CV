@@ -1,0 +1,139 @@
+\documentclass[a4paper,11pt]{article}
+
+%A Few Useful Packages
+\usepackage{enumitem}
+\usepackage{marvosym}
+\usepackage{tabularx} % in the preamble
+\usepackage[margin=1cm]{geometry}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\large\scshape\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+\addtolength{\voffset}{-1.0cm}
+\addtolength{\oddsidemargin}{-1.0cm}
+
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+%--------------------TITLE-------------
+\par{\centering{\huge Austin Jones \\
+\small \textsc{Address:} 1004 Game Day Way, Apt 201\\
+\small \textsc{Phone:} 615\--962\--3732 \---
+\textsc{Email:} \href{mailto:ajone239@vols.utk.edu}{ajone239@vols.utk.edu}
+} \smallskip
+\par{\textbf{Objective}: Computer Engineering Senior looking for a summer internship May 2021 or full time position for Jan 2022.
+%Networking solutions sounds fucking stupid
+Interested in working with Embedded Systems, IoT, Networking.
+}\smallskip}
+
+
+%--------------------SECTIONS-----------------------------------
+
+%Section: Education
+\section{Education}
+\begin{tabularx}{\textwidth}{lXr}
+   \textbf{University of Tennessee Knoxville} & & Anticipated Graduation: Dec 2021\\
+   Bachelor of Science in \textsc{Computer Engineering} &  & \normalsize \textsc{Gpa}: 4.0/4.0\\
+\end{tabularx}
+
+% \section{Academic Experience}
+\begin{tabularx}{\textwidth}{r|X}
+
+   \emph{Current} & \textbf{Engineering Professional Practice Office} \-- University of Tennessee\\
+   \textsc{Aug 2019} & \emph{Student Ambassador}\\
+   & \small{Work with students to improve resumes, interview/inter-person skills, overall professional skill to increase the number of internships and coops attained by the students at UT\@.
+   }\\
+
+   \multicolumn{2}{c}{} \\
+
+   \textsc{Apr 2019} & \textbf{Proof of Concept Password Manager} \-- University of Tennessee\\
+   & \emph{COSC 302 Project}\\
+   & \small{Collaborated with a group of peers, using Github, to create a functional Chrome extension that manages a user's passwords for multiple sites.
+            Parsed web pages to find password and username fields and stored users encrypted data in the cloud.
+            The data was encrypted with the RC4 symmetric stream based encryption algorithm.
+   }\\
+\end{tabularx}
+
+%Section: Work Experience at the top
+\section{Work Experience}
+\begin{tabularx}{\textwidth}{r|X}
+   \emph{Current} & \textbf{Siemens Molecular Imaging} \-- Knoxville\\
+   \textsc{Jan 2019} & \emph{Electrical R\&D Intern}\\
+   & \small{Conduct work on projects, both solo and team, to provide value to the ER\&D team:
+      \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=0pt,partopsep=1pt, parsep=1pt]
+         % include head of r&d?
+         \item Presented findings from work to a large technical audience to demonstrate the validity of a new system architecture.
+         \item Lead long term projects:
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=0pt,partopsep=1pt, parsep=1pt]
+               \item Utilize a Xilinx MPSoC to test limitations of ARM Core processing vs an FPGA implementation to assess cost reductions.
+               \item Use many Raspberry Pis with off the shelf networking hardware to conduct data path tests and compare the bandwidth with current custom solutions.
+               \item Work with a team of Engineers, collaborating with GitLab to write various driver code for a custom Linux image.
+               \item Create a functional test to insure proprietary hardware functioned to spec.
+               \item Collaborate with fellow intern to make a suite of software tools to monitor systems for various needs and engineers.
+            \end{itemize}
+         \item Update and Maintain Engineering Documentation for various projects.
+         \item Assist Engineers with general tasks (e.g.\ wiring, testing, Python scripts to process files)
+      \end{itemize}}\\
+\end{tabularx}
+
+\section{Skills}
+\begin{tabularx}{\textwidth}{rl}
+   Working Knowledge: & Xilinx FPGAs, Petalinux, Intel FPGAS,.NET, POSIX\\
+   Serious Languages:& C++, C, C\#, Python, Shell, VHDL, \LaTeX{}\\
+   Recreational Languages:& Rust, Haskell, Groff, BF \\
+   Office Skills: & Excel, GIMP, Visio\\
+\end{tabularx}
+
+%Section: Scholarships and additional info
+\section{Scholarships and Honors}
+\begin{tabularx}{\textwidth}{lX}
+   \textsc{Aug 2019} \-- \emph{Current} & S. T. Harris Scholarship\\
+   \textsc{Aug 2019} \-- \emph{Current} & Herschel C. and Louise Runnion Brand Engineering Scholarship\\
+   \textsc{May 2019} & Gonzalez Family Awards for Outstanding Computer Engineering Junior\\
+\end{tabularx}
+
+\section{Interests and Hobbies}
+\begin{itemize}[topsep=1pt,itemsep=0pt,partopsep=1pt, parsep=1pt]
+   \item Raspberry Pi, Arduino, Self-Hosting, IoT Projects
+   \item VolHacks, Mechanical Keyboards, Basic Electrical projects
+   \item Rock Climbing, Cooking, Digital Art % it's dumb but hey.
+\end{itemize}
+
+\end{document}
