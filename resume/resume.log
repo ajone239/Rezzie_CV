@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  28 AUG 2020 22:29
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  28 AUG 2020 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -568,7 +568,7 @@ LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Underfull \hbox (badness 10000) in alignment at lines 104--104
+Underfull \hbox (badness 10000) in alignment at lines 122--122
 [][] 
  []
 
@@ -580,15 +580,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./resume.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 139.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: 33A3D1A3FD55CA85A36A46D0BB90956B;264.
 
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: 33A3D1A3FD55CA85A36A46D0BB90956B;264
-(rerunfilecheck)             After:  30E4F1765DED65F41E0FFDA51CBCA237;321.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
