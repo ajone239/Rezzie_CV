@@ -1,28 +1,26 @@
 \documentclass[a4paper,11pt]{article}
 
-%A Few Useful Packages
 \usepackage{enumitem}
 \usepackage{marvosym}
-\usepackage{tabularx} % in the preamble
+\usepackage{tabularx} % fancy tables
 \usepackage[margin=1cm]{geometry}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\usepackage{fontspec} % for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} % other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-\usepackage{titlesec}					%custom \section
+\usepackage[big]{layaureo} % better formatting of the A4 page
+\usepackage{titlesec} % custom \section
 
-%Setup hyperref package, and colours for links
+% Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%CV Sections inspired by:
-%http://stefano.italians.nl/archives/26
 \titleformat{\section}{\large\scshape\bfseries}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
+% Tweak a bit the top margin
 \addtolength{\voffset}{-1.0cm}
+% Tweak a bit the left margin
 \addtolength{\oddsidemargin}{-1.0cm}
 
 
@@ -37,18 +35,17 @@
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
+%% WATERMARK TEST [**not part of a CV**]---------------
+% \font\wm=''Baskerville:color=787878'' at 8pt
+% \font\wmweb=''Baskerville:color=FF1493'' at 8pt
+% {\wm
+% 	\begin{textblock}{1}(0,0)
+% 		\rotatebox{-90}{\parbox{500mm}{
+% 			Typeset by Austin Jones with \XeTeX\  \today\
+% 		}
+% 	}
+% 	\end{textblock}
+% }
 
 \pagestyle{empty} % non-numbered pages
 
@@ -59,14 +56,14 @@
 \textsc{Email:} \href{mailto:ajone239@vols.utk.edu}{ajone239@vols.utk.edu}
 } \smallskip
 \par{\textbf{Objective}: Computer Engineering Senior looking for a summer internship 2021 or full time position for Jan 2022.
-%Networking solutions sounds fucking stupid
 Interested in working with Embedded Systems, IoT, and Networking.
 }\smallskip}
 
 
 %--------------------SECTIONS-----------------------------------
 
-%Section: Education
+% Section: Education
+% degrees
 \section{Education}
 \begin{tabularx}{\textwidth}{lXr}
    \textbf{University of Tennessee Knoxville} & & Anticipated Graduation: Dec 2021\\
@@ -74,6 +71,7 @@ Interested in working with Embedded Systems, IoT, and Networking.
 \end{tabularx}
 
 % \section{Academic Experience}
+% work done in academic spaces
 \begin{tabularx}{\textwidth}{r|X}
 
    \emph{Current} & \textbf{Engineering Professional Practice Office} \-- University of Tennessee\\
@@ -96,7 +94,8 @@ Interested in working with Embedded Systems, IoT, and Networking.
       \end{itemize}}\\
 \end{tabularx}
 
-%Section: Work Experience at the top
+% Section: Work Experience
+% describe technical things that you've done for companies here
 \section{Work Experience}
 \begin{tabularx}{\textwidth}{r|X}
    \emph{Current} & \textbf{Siemens Molecular Imaging} \-- Knoxville\\
@@ -125,10 +124,10 @@ Interested in working with Embedded Systems, IoT, and Networking.
    Working Knowledge: & POSIX, Xilinx FPGAs, Petalinux, Intel FPGAS, Visual Studio\\
    Professional Languages: & C++, C, C\#, Python, Shell, VHDL\\
    Recreational Languages: & Rust, Haskell, BF, Groff\\
-   Office Skills: & Excel, GIMP, Git, Visio, \LaTeX{}\\
+   Office Skills: & Excel, GIMP, Git, Visio, \LaTeX{}, Markdown\\
 \end{tabularx}
 
-%Section: Scholarships and additional info
+% Section: Scholarships and additional info
 \section{Scholarships and Honors}
 \begin{tabularx}{\textwidth}{lX}
    \textsc{May 2019} & Gonzalez Family Awards for Outstanding Computer Engineering Junior\\
