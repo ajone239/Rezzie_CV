@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  15 SEP 2020 12:11
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  16 FEB 2021 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,6 +560,13 @@ LaTeX Info: Redefining \nameref on input line 36.
 \openout3 = `resume.out'.
 
  ABD: EveryShipout initializing macros
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 59.
+
 
 LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 (Font)              using `TU/lmr/bx/n' instead on input line 67.
@@ -568,20 +575,20 @@ LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Underfull \hbox (badness 10000) in alignment at lines 128--128
+Overfull \hbox (2.25247pt too wide) in alignment at lines 73--73
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 33A3D1A3FD55CA85A36A46D0BB90956B;264.
+(rerunfilecheck)             Checksum: 3B86C7360C43B373A1BD6C74CEAED8E1;264.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -590,7 +597,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  16396 strings out of 479418
  293485 string characters out of 5884586
- 604719 words of memory out of 5000000
+ 605719 words of memory out of 5000000
  33722 multiletter control sequences out of 15000+600000
  535557 words of font info for 49 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
