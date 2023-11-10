@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage{enumitem}
 \usepackage{marvosym}
@@ -54,17 +54,17 @@
 % Name
 \par{\centering{\Huge Austin Jones}\smallskip{}
 % Address
-\par{\small \textsc{Address:} 1004 Game Day Way Apt 201, Knoxville, TN \---
+\par{\small \textsc{Address:} 201 S Central St, Knoxville, TN \---
 % Phone
 \small \textsc{Phone:} 615\--962\--3732\\
 % Email
-\textsc{Email:} \href{mailto:ajone239@vols.utk.edu}{ajone239@vols.utk.edu} \---
+\textsc{Email:} \href{mailto:ajones53.aj@gmail.com}{ajone239@vols.utk.edu} \---
 % Github
 \textsc{GitHub:} \href{https://github.com/ajone239}{https://github.com/ajone239}
 } \smallskip{}
 % Summary
-\par{\textbf{\underline{Objective}}: Computer Engineering Senior looking for full time position for Jan 2022.
-Interested in working with Embedded Systems, Operating Systems, IoT, and Networking.
+\par{\textbf{\underline{Objective}}: Software Engineer with experience in Embedded Software and Cloud Development looking for cool problems to solve.
+Currently looking for employment starting Dec 2023.
 }\smallskip}{}
 
 
@@ -73,39 +73,30 @@ Interested in working with Embedded Systems, Operating Systems, IoT, and Network
 % Section: Skills
 \section{Skills}
 \begin{tabularx}{\textwidth}{rl}
-   Working Knowledge: & POSIX, Xilinx MPSoCs/FPGAs, Petalinux, Intel FPGAs, ARM MCUs\\
-   Professional Languages: & C++, C, C\#, Python, Shell, VHDL\\
-   Recreational Languages: & Rust, Haskell, BF\\
-   Office Skills: & Excel, GIMP, Git, Gerrit, Visio, \LaTeX{}, Markdown, Groff\\
+   Cloud Technologies: & Docker, K8s, AWS, GitHub Actions, Postgres \\
+   Embedded Technologies: & ARM MCUs, Xilinx FPGAs/MPSoCs \\
+   Languages: & C, Rust, C++, Go, Shell, Python, VHDL \\
 \end{tabularx}
 
 % Section: Education
 % degrees
 \section{Education}
 \begin{tabularx}{\textwidth}{lXr}
-   \textbf{University of Tennessee Knoxville} & & Anticipated Graduation: Dec 2021\\
+   \textbf{University of Tennessee Knoxville} & & Graduation: Dec 2021\\
    Bachelor of Science in \textsc{Computer Engineering} &  & \normalsize \textsc{Gpa}: $4.0/4.0$\\
 \end{tabularx}
 
 % work done in academic spaces
 \begin{tabularx}{\textwidth}{r|X}
 
-   \emph{Current} & \textbf{Engineering Professional Practice Office} \-- University of Tennessee\\
+   \textsc{Dec 2021} & \textbf{Engineering Professional Practice Office} \-- University of Tennessee\\
    \textsc{Aug 2019} & \emph{Student Ambassador}\\
-   & \small{Assist UT engineering students to improve resumes, interview/inter-person skills, and overall professional skill.
+   & \small{Assist UT engineering students to improve resumes, interview/inter-personal skills, and overall professional skills.
             Work with other ambassadors to facilitate networking events and career fairs.
    }\\
 
    \multicolumn{2}{c}{} \\
 
-   \textsc{May 2019} & \textbf{Password Manager Browser Extension} \-- University of Tennessee\\
-   \textsc{Apr 2019} & \emph{Data Structures and Algorithms Project}\\
-   & \small{Collaborated with a group of peers to create a Chrome extension that manages a user's passwords for multiple sites.
-      \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
-         \item Parsed web pages to find password/username fields and stored users data in cloud.
-         \item User data encrypted with the RC4 symmetric stream based encryption algorithm.
-      \vspace{-0.5cm}
-      \end{itemize}}\\
 \end{tabularx}
 
 % Section: Work Experience
@@ -113,10 +104,48 @@ Interested in working with Embedded Systems, Operating Systems, IoT, and Network
 \section{Work Experience}
 
 %
+% PolySign
+%
+\begin{tabularx}{\textwidth}{r|X}
+   \textsc{Nov 2023} & \textbf{PolySign} \-- Remote \\
+   \textsc{Jan 2022} & \emph{Senior Software Engineer}\\
+   & \small{Collaborated with many teams across multiple products and technologies to meet the often changing needs of the Crypto Market.
+      \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+        % Hot wallet
+        \item Helped stand up a green field project in Rust aimed at performing fast, distributed multiparty compute signing:
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+              \item Designed fully asynchronous architecture for distributed message signing.
+              \item Overhauled network stack to use Tonic gRPC over VirtioVsock Sockets.
+              \item Redesigned CI/CD Pipeline to minimize redundancy in builds, regression testing, and integration testing.
+              \item Integrated with main product as a POC.
+            \end{itemize}
+        % Backend
+        \item Contributed to Python microservice backend:
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+              %% Split Escrow
+              \item Redesigned feature data model to increase robustness.
+              \item Designed a new data flow to allow for more flexibility in the feature.
+              %% Two Sided Escrow
+              % General
+              \item Found, ticketed, and worked on tech debt as it was found.
+            \end{itemize}
+        % Web3 hacking
+        \item Implemented an end-to-end POC feature across multiple projects.
+        % HSM
+        \item Worked on legacy C/Rust codebase to support features in other products.
+        % Soft skills
+        \item Performed monthly Dev-on-Call rotations debugging live issues across multiple environments including: dev, testing, pre-prod, and prod.
+        \item Planned, hosted, and participated in a company wide Hackathon.
+        \item Organized and hosted an engineering reading club.
+      \vspace{-0.5cm}
+      \end{itemize}}\\
+\end{tabularx}
+
+%
 % Garmin
 %
 \begin{tabularx}{\textwidth}{r|X}
-   \emph{Current} & \textbf{Garmin International} \-- Olathe, KS\\
+   \textsc{Aug 2021} & \textbf{Garmin International} \-- Olathe, KS\\
    \textsc{May 2021} & \emph{Embedded Software Intern}\\
    & \small{Developed code for microcontroller to control power on logic for an unreleased product.
       \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
@@ -131,7 +160,7 @@ Interested in working with Embedded Systems, Operating Systems, IoT, and Network
 % Siemens
 %
 \begin{tabularx}{\textwidth}{r|X}
-   \textsc{May 2021} & \textbf{Siemens Molecular Imaging} \-- Knoxville, TN\\
+   \textsc{Nov 2021} & \textbf{Siemens Molecular Imaging} \-- Knoxville, TN\\
    \textsc{Jan 2019} & \emph{Electrical R\&D Intern}\\
    & \small{Conduct projects, both individually and collaboratively, to provide value to the ER\&D team:
       \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
@@ -140,12 +169,10 @@ Interested in working with Embedded Systems, Operating Systems, IoT, and Network
             \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
                \item Utilize a Xilinx MPSoC to test limitations of ARM Core processing vs an FPGA implementation to assess cost reductions.
                \item Used multiple Raspberry Pis with off the shelf networking hardware to conduct data path tests and compare the bandwidth with current custom solutions.
-               % \item Work with a team of engineers using GitLab to write various driver code for a custom Linux image.
+               \item Work with a team of engineers using GitLab to write various driver code for a custom Linux image.
                \item Developed Firmware, Embedded Software, and Application Software for a unit test fixture that is used during production of PET electronics.
-               % \item Collaborated with a fellow intern to build a GUI Application that monitored and report the status of and entire system including all sub-assemblies.
+               \item Collaborated with a fellow intern to build a GUI Application that monitored and report the status of and entire system including all sub-assemblies.
             \end{itemize}
-         % \item Update and maintain engineering documentation for various projects.
-         % \item Assist engineers with general tasks (e.g.\ wiring, testing, Python scripts to process files)
          \item Assist engineers with general tasks (e.g.\ wiring, testing, Python scripts, documentation).
       \vspace{-0.5cm}
       \end{itemize}}\\
@@ -160,10 +187,10 @@ Interested in working with Embedded Systems, Operating Systems, IoT, and Network
 %% \end{tabularx}
 
 \section{Interests and Hobbies}
-\begin{itemize}[topsep=1pt,itemsep=0pt,partopsep=1pt, parsep=1pt]
-   \item Raspberry Pi, Arduino, Self-Hosting, IoT Projects
-   \item VolHacks, Custom Mechanical Keyboards, Basic Electrical Projects
-   \item Rock Climbing, Cooking, Specialty Coffee, Digital Art
+\begin{itemize}[topsep=2pt,itemsep=2pt,partopsep=2pt, parsep=2pt]
+   \item Custom Mechanical Keyboards, Basic Electrical Projects, Competitive Programming
+   \item Chess, Go, Reading, Cooking
+   \item Rock Climbing, Cycling,  Specialty Coffee
 \end{itemize}
 
 \end{document}
