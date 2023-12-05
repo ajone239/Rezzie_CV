@@ -1,0 +1,92 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{enumitem}
+\usepackage{marvosym}
+\usepackage{tabularx} % fancy tables
+\usepackage[margin=1cm]{geometry}
+\usepackage{fontspec} % for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} % other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} % better formatting of the A4 page
+\usepackage{titlesec} % custom \section
+
+% Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\titleformat{\section}{\large\scshape\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+% Tweak a bit the top margin
+\addtolength{\voffset}{-1.0cm}
+% Tweak a bit the left margin
+\addtolength{\oddsidemargin}{-1.0cm}
+
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+%--------------------Header-------------
+
+% Name
+\Huge Austin Jones\smallskip{} \\
+% Address
+\small \textsc{Address:} 201 S Central St, Knoxville, TN \\
+% Phone
+\small \textsc{Phone:} 615\--962\--3732 \\
+% Email
+\textsc{Email:} \href{mailto:ajones53.aj@gmail.com}{ajones53.aj@gmail.com} \\
+% Github
+\textsc{GitHub:} \href{https://github.com/ajone239}{https://github.com/ajone239} \\
+
+% Today
+\today
+
+% Salutation
+Dear Hiring Manager,
+
+% Introduction
+I am writing you to apply to the Software Engineering position at NexHealth.
+I've been working in industry for about 2 years now, but I've nearly 5 years of engineering experience given the work I did in internships.
+Working with distributed systems to provide a scalable and reliable service to a global customer base is something that has always interested me about cloud development.
+
+
+% Body paragraph
+At the University of Tennessee Knoxville, I gained a fundamental basis of software and the best practices of Software Development.
+These practices were further reinforced in my internships.
+At Siemens, I worked on many projects ranging up and down the stack.
+From GUI test applications to embedded firmware, I had my hands in many long term projects; some of which are still in use.
+Consequently, I was also responsible for presenting and communicating my work/findings, requiring effective understanding and organization of ideas to show to audiences of varying technicality.
+At Garmin, my efforts were more focused.
+In a summer, I became very acquainted with a particular microcontroller and used it to write the power-on logic for a new product.
+My sole responsibilities were to realize this software, but it involved communicating with the rest of the team, reading schematics, and much code review to inform firmware decisions.
+
+My time in industry was spent on much higher level software.
+At Polysign, I worked almost exclusively on cloud-based, distributed applications.
+As it was a start-up, I was often handed the reigns on designs or even full features.
+The fast and agile development process allowed for whole top-level designs to be usurped for better ones.
+Team cross talk and integration between teams wasn't common but vital to the bringing up features, products, or debugging production incidents.
+Technologies across the firms were new and abundant meaning that picking up a small task may also involve learning two or three new technologies and how to use them.
+This kept me on my toes for entering new projects, expecting nothing and turning to testing to get my footing.
+
+% Closing paragraph
+Thank you for taking the time to read my application and considering me for this position.
+If you've any questions, feel free to reach me with the information above.
+I'm sure my mixture of skills and work ethic could be a great fit for this role.
+
+% Letter ending and signature
+Best, \\
+Austin Jones
+
+\end{document}
