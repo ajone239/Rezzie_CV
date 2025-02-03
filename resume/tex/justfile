@@ -1,6 +1,6 @@
-all: resume.pdf
+all: build
 
-resume.pdf: resume.tex
+build:
 	xelatex resume.tex
 
 clean:
