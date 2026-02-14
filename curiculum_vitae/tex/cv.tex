@@ -1,11 +1,14 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %A Few Useful Packages
 \usepackage{enumitem}
 \usepackage{marvosym}
 \usepackage{tabularx} % in the preamble
 \usepackage[margin=1cm]{geometry}
-\usepackage{fontspec} 					%for loading fonts
+
+\usepackage{fontspec}
+\setmainfont{Courier}
+
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -31,6 +34,9 @@
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
+
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.175\hsize}X}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -58,10 +64,10 @@
 % Section: Skills
 \section{Skills}
 \begin{tabularx}{\textwidth}{rl}
-   Working Knowledge: & Xilinx FPGAs, Xilinx MPSoCs, Petalinux, Intel FPGAS, POSIX\\
-   Professional Languages:& C++, C, C\#, Python, Shell, VHDL\\
-   Recreational Languages:& Rust, Haskell, BF, Groff \\
-   Office Skills: & Excel, GIMP, Visio, \LaTeX{}\\
+    Cloud Technologies: & Docker, K8s, AWS, GitHub Actions, gRPC, Postgres \\
+    Embedded Technologies: & ARM MCUs, Xilinx FPGAs/MPSoCs \\
+    Project Management: & GitHub, Jira, Azure, Agile \\
+    Languages: & C, Rust, C\#, C++, .NET, Shell, Python, VHDL \\
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,10 +78,10 @@
 %
 % Uster
 %
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{s|b}
    \textsc{Current \--} & \textbf{Uster} \-- Knoxville, TN\\
    \textsc{Jan 2024} & \small{Work to make applications and solutions to facilitate Textile Grading devices} \\
-   & \emph{\textbf{Software Engineer}}: Jan 2024 \-- Current
+   & \emph{\textbf{Software Engineer}}:
    \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
         \item Own an application for aggregating and statusing state across large sites.
             \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
@@ -118,7 +124,7 @@
 %
 % PolySign
 %
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{s|b}
    \textsc{Nov 2023 \--} & \textbf{PolySign} \-- Remote \\
    \textsc{Jan 2022} & \small{Collaborated with many teams across multiple products and technologies to build out features and products for a Digital Asset Custodian in the quickly evolving Cryptocurrency market.} \\
    & \emph{\textbf{Senior Software Engineer}}: Jan 2023 \-- Nov 2023
@@ -158,7 +164,7 @@
 %
 % Garmin
 %
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{s|b}
    \textsc{Aug 2021 \--} & \textbf{Garmin International} \-- Olathe, KS\\
    \textsc{May 2021} & \emph{Embedded Software Intern}\\
    & \small{Developed code for microcontroller to control power on logic for an unreleased product.
@@ -172,7 +178,7 @@
 %
 % Siemens
 %
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{s|b}
    \textsc{Nov 2021 \--} & \textbf{Siemens Molecular Imaging} \-- Knoxville, TN\\
    \textsc{Jan 2019} & \emph{Electrical R\&D Intern}\\
    & \small{Conduct projects, both individually and collaboratively, to provide value to the ER\&D team:
@@ -193,7 +199,7 @@
 % Section: Personal Projects
 \section{Personal Projects}
 
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{s|b}
 
    \textsc{Jan 2025} & \textbf{
        \href{https://apps.apple.com/us/app/abc-notepad/id6741031657}{ABC Notebook}
@@ -260,9 +266,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Academic Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{s|b}
 
-   \emph{Current} & \textbf{Engineering Professional Practice Office} \-- University of Tennessee\\
+   \textsc{Dec 2021} & \textbf{Engineering Professional Practice Office} \-- University of Tennessee\\
    \textsc{Aug 2019} & \emph{Student Ambassador}\\
    & \small{Assist UT engineering students to improve resumes, interview/inter-person skills, and overall professional skill.
             Work with other ambassadors to facilitate networking vents and career fairs.
