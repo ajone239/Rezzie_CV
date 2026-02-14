@@ -17,8 +17,6 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%CV Sections inspired by:
-%http://stefano.italians.nl/archives/26
 \titleformat{\section}{\large\scshape\bfseries}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 %Tweak a bit the top margin
@@ -27,7 +25,6 @@
 \addtolength{\oddsidemargin}{-1.0cm}
 
 
-%-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
 
 \setlength{\TPHorizModule}{30mm}
@@ -38,29 +35,23 @@
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
-
 \pagestyle{empty} % non-numbered pages
 
 %--------------------TITLE-------------
-\par{\centering{\huge Austin Jones \\
-\small \textsc{Address:} 1004 Game Day Way Apt 201, Knoxville, TN \---
-\small \textsc{Phone:} 615\--962\--3732 \\
-\textsc{Email:} \href{mailto:ajone239@vols.utk.edu}{ajone239@vols.utk.edu} \---
-\textsc{Github:} \href{https://github.com/ajone239/}{github.com/ajone239/}
-} \smallskip\par}
 
+% Name
+\par{\centering{\Huge Austin Jones}\smallskip{}
+% Address
+\par{\small \textsc{Address:} 101 E 5th Ave Apt. D-304, Knoxville, TN \---
+% Phone
+\small \textsc{Phone:} 615\--962\--3732\\
+% Email
+\textsc{Email:} \href{mailto:ajones53.aj@gmail.com}{ajones53.aj@gmail.com} \---
+% Github
+\textsc{GitHub:} \href{https://github.com/ajone239}{https://github.com/ajone239}
+} \smallskip{}
+\par{\textbf{\underline{Objective}}: Software Engineer with experience in Embedded Software and Cloud Development looking for cool problems to solve.
+}\smallskip}{}
 
 %--------------------SECTIONS-----------------------------------
 
@@ -71,6 +62,190 @@
    Professional Languages:& C++, C, C\#, Python, Shell, VHDL\\
    Recreational Languages:& Rust, Haskell, BF, Groff \\
    Office Skills: & Excel, GIMP, Visio, \LaTeX{}\\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section: Work Experience at the top
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+%
+% Uster
+%
+\begin{tabularx}{\textwidth}{r|X}
+   \textsc{Current \--} & \textbf{Uster} \-- Knoxville, TN\\
+   \textsc{Jan 2024} & \small{Work to make applications and solutions to facilitate Textile Grading devices} \\
+   & \emph{\textbf{Software Engineer}}: Jan 2024 \-- Current
+   \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+        \item Own an application for aggregating and statusing state across large sites.
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+                \item Own the project from customer spec to delivery of 1.0.
+                \item Design a UI/UX to show ~500 parameters from ~50 machines.
+                \item Semi-real time updates from 50 machines with smooth UI.
+                \item Develop lab infra to allow for a swarm of virtual devices to exercise the application away from customer site.
+                \item Accidentally write a UI framework.
+                    \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+                        \item Converts a JSON UI spec into WPF screens.
+                        \item Allows for easy maintenance of ~50 ui screens and hundreds of files.
+                        \item Consolidates field validation, styling, and data binding per field type..
+                    \end{itemize}
+            \end{itemize}
+        \item Inherit and support utility software for manufacture of products.
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+                \item Solely inherit a 5 year old application from another team of 5.
+                \item Support its use on site for ongoing manufacture of company products.
+                \item Assess work needed to go from MVP hybrid use to full use.
+                \item Own this work and its pre-release validation.
+                \item Over see the validation and deployment of the new procedure.
+            \end{itemize}
+        \item Provide software support for implementing research algorithms into production software.
+        \item Developed algorithms to align data product across instruments.
+        \item Organize and run efforts relating to company purpose and employee development.
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+                \item Spearhead a grass roots program for employee recognition.
+                \item Start a group to help employees gain autonomy for projects they want to happen.
+                % \item Plan a cross site field day to bring together employees and inspire camaraderie.
+            \end{itemize}
+        \item Take on a summer intern to get an intern program started.
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+                \item Plan and manage work of the intern.
+                \item Learn how to let people fail to learn.
+                \item Organize lunch and learns, knowledge transfer sessions, and general intern things.
+            \end{itemize}
+    \end{itemize}\\
+\end{tabularx}
+
+%
+% PolySign
+%
+\begin{tabularx}{\textwidth}{r|X}
+   \textsc{Nov 2023 \--} & \textbf{PolySign} \-- Remote \\
+   \textsc{Jan 2022} & \small{Collaborated with many teams across multiple products and technologies to build out features and products for a Digital Asset Custodian in the quickly evolving Cryptocurrency market.} \\
+   & \emph{\textbf{Senior Software Engineer}}: Jan 2023 \-- Nov 2023
+   \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+        % Backend
+        \item Contributed to Escrow feature of Python microservice backend to meet new customer requirements:
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+              %% Split Escrow
+              \item Redesigned feature data model and control flow to increase robustness.
+              \item Designed a new data flow to allow for more flexibility in the feature.
+              %% Two Sided Escrow
+              %% General
+              % \item Found, ticketed, and worked on tech debt as it was found.
+            \end{itemize}
+        % Web3 hacking
+        \item Implemented an end-to-end POC for an unreleased feature across multiple projects.
+        % HSM
+        \item Worked on legacy C/Rust codebase to support features in other products.
+        % Soft skills
+        \item Performed monthly Dev-on-Call rotations debugging live issues across multiple environments including: dev, testing, pre-prod, and prod.
+        \item Planned, hosted, and participated in a company wide Hackathon.
+        \item Organized and hosted a weekly engineering reading club.
+      \end{itemize}\\
+   & \emph{\textbf{Software Engineer}}: Jan 2022 \-- Dec 2022
+   \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+        % Hot wallet
+        \item Helped stand up a green field project in Rust aimed at performing fast, distributed multiparty compute signing:
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+              \item Designed fully asynchronous architecture for distributed message signing increasing efficiency and robustness.
+              \item Overhauled network stack to use Tokio's Tonic gRPC over VirtioVsock Sockets increasing dev velocity and code cleanliness.
+              \item Redesigned CI/CD Pipeline for multi-repo project to minimize redundancy in builds, regression testing, and integration testing.
+              \item Integrated with main product as a POC.
+            \end{itemize}
+      \end{itemize}\\
+\end{tabularx}
+
+%
+% Garmin
+%
+\begin{tabularx}{\textwidth}{r|X}
+   \textsc{Aug 2021 \--} & \textbf{Garmin International} \-- Olathe, KS\\
+   \textsc{May 2021} & \emph{Embedded Software Intern}\\
+   & \small{Developed code for microcontroller to control power on logic for an unreleased product.
+      \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+        \item Utilized MCU to monitor main board status and determine the power state of the board.
+        \item Referenced PCB schematics and MCU documentation to integrate software and hardware.
+        \item Gained strong familiarity with ARM/STM microcontrollers.
+      \end{itemize}}\\
+\end{tabularx}
+
+%
+% Siemens
+%
+\begin{tabularx}{\textwidth}{r|X}
+   \textsc{Nov 2021 \--} & \textbf{Siemens Molecular Imaging} \-- Knoxville, TN\\
+   \textsc{Jan 2019} & \emph{Electrical R\&D Intern}\\
+   & \small{Conduct projects, both individually and collaboratively, to provide value to the ER\&D team:
+      \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+         \item Presented findings from work to a large technical audience to demonstrate the validity of a new system architecture.
+         \item Long term projects:
+            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
+               \item Utilize a Xilinx MPSoC to test limitations of ARM Core processing vs an FPGA implementation to assess cost reductions.
+               \item Used multiple Raspberry Pis with off the shelf networking hardware to conduct data path tests and compare the bandwidth with current custom solutions.
+               \item Work with a team of engineers using GitLab to write various driver code for a custom Linux image.
+               \item Developed Firmware, Embedded Software, and Application Software for a unit test fixture that is used during production of PET electronics.
+               % \item Collaborated with a fellow intern to build a GUI Application that monitored and report the status of and entire system including all sub-assemblies.
+            \end{itemize}
+        % \item Assist engineers with general tasks (e.g.\ wiring, testing, Python scripts, documentation).
+      \end{itemize}}\\
+\end{tabularx}
+
+% Section: Personal Projects
+\section{Personal Projects}
+
+\begin{tabularx}{\textwidth}{r|X}
+
+   \textsc{Jan 2025} & \textbf{
+       \href{https://apps.apple.com/us/app/abc-notepad/id6741031657}{ABC Notebook}
+   } \\
+   & \small{
+       An app that is meant to help with a CBT journaling style.
+       Made in React Native with the Expo Router.
+       Built and deployed with EAS.
+   }\\
+
+   \multicolumn{2}{c}{} \\
+
+   \textsc{Dec 2024} & \textbf{
+       \href{https://ajone239.github.io}{My blog}
+   }\\
+   & \small{
+       A place for me to put posts and articles.
+       I mainly write about personally philosophy.
+       Made with Svelte 5.
+   }\\
+
+   \multicolumn{2}{c}{} \\
+
+   \textsc{May 2024} & \textbf{
+       \href{https://ajone239.github.io/arcade/}{Austin's Arcade}
+   }\\
+   & \small{
+       A collection of JavaScript games.
+       They are mostly remakes of classic arcade games.
+       They've been an exercise in me working fast and shipping.
+   }\\
+
+   \multicolumn{2}{c}{} \\
+
+   \textsc{Dec 2023} & \textbf{
+       \href{https://github.com/ajone239/quartre_con}{Connect Four Bot}
+   }\\
+   & \small{
+       A connect four bot written in Rust.
+       It implements basic alpha-beta minimax.
+       At a shallow depth it's formidable \-- deeper depths it is impossible.
+   }\\
+
+   \multicolumn{2}{c}{} \\
+
+   \textsc{Jan 2021} & \textbf{Light Sign with Web Server Control} \\
+   & \small{
+       Controlled an LED Array to display text specified on a web page.
+       Custom web server written in Rust hosted control page and sent data over UART.
+       Arduino received UART data and displayed data on LED Array.
+   }\\
+
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,32 +286,6 @@
    & \small{Reimplemented the retro game Pong on an FPGA using VHDL\@.
             Component was implemented to read the game state and render all game objects and scores.
             }\\
-\end{tabularx}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Section: Work Experience at the top
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Work Experience}
-\begin{tabularx}{\textwidth}{r|X}
-   \emph{Current} & \textbf{Siemens Molecular Imaging} \-- Knoxville\\
-   \textsc{Jan 2019} & \emph{Electrical R\&D Intern}\\
-   & \small{Conduct projects, both individually and collaboratively, to provide value to the ER\&D team.
-            Work involved both product and research driven projects.
-            Product driven work would involve sustaining, documentation, and more inter-departmental communication.
-            Research involved proof of concept projects that would extrapolate to larger implementation.
-      \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
-         \item Presented findings from work to a large technical audience to demonstrate the validity of a new system architecture.
-         \item Lead long term projects:
-            \begin{itemize}[leftmargin=20pt,topsep=1pt,itemsep=1pt,partopsep=0pt, parsep=1pt]
-               \item Utilize a Xilinx MPSoC to test limitations of ARM Core processing vs an FPGA implementation to assess cost reductions.
-               \item Used multiple Raspberry Pis with off the shelf networking hardware to conduct data path tests and compare the bandwidth with current custom solutions.
-               \item Work with a team of Engineers using GitLab to write various driver code for a custom Linux image.
-               \item Created a functional test to insure proprietary hardware functioned to spec.
-            \end{itemize}
-         \item Update and maintain Engineering Documentation for various projects.
-         \item Assist engineers with general tasks (e.g.\ wiring, testing, Python scripts to process files)
-      \vspace{-0.5cm}
-      \end{itemize}}\\
 \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

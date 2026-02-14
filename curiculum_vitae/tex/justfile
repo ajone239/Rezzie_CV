@@ -1,0 +1,7 @@
+all: build
+
+build:
+	xelatex cv.tex
+
+clean:
+	rm -rf *.aux  *.log  *.out  *.pdf
